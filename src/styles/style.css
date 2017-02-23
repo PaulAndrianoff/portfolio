@@ -1,0 +1,153 @@
+:root
+{
+	--color-char: #111;
+	--color-button: #A00000;
+}
+
+body{
+	background:#efefef;
+	font-family:Helvetica,Arial;
+	font-size:14px;
+	position: relative;
+}
+
+.clearBoth{
+	clear: both;
+}
+
+/*************************\
+
+				[Header]
+
+\*************************/
+header.header
+{
+	color: var(--color-char);
+	font-size: 1.4em;
+}
+
+nav
+{
+	width: 90%;
+	margin: 10px auto 0;
+	position: relative;
+}
+
+.content
+{
+	width: 120px;
+	display: inline-block;
+	text-align: center;
+}
+
+.content:hover .underline
+{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+a
+{
+	display: block;
+	height: 20px;
+	text-decoration: none;
+}
+
+.underline
+{
+	background: #A00000;
+	height: 2px;
+	transition: transform 0.3s;
+	transform-origin: right;
+	transform: scaleX(0);
+	will-change: transform;
+}
+
+header.header ul, header.header li
+{
+	display: inline-block;
+}
+
+header.header ul
+{
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+
+/*
+ $logo
+*/
+.logo{
+	width: 200px;
+	margin-left: -35px;
+}
+
+/*************************\
+
+				[Page general]
+
+\*************************/
+.title
+{
+	width: 150px;
+	margin: 40px 100px;
+	font-size: 2em;
+	color: var(--color-char);
+}
+
+.title .underline
+{
+	transform: scaleX(1);
+}
+
+/*************************\
+
+				[Page index]
+
+\*************************/
+.description
+{
+	width: 630px;
+	margin: 80px 140px;
+	font-size: 2.5em;
+	color: var(--color-char);
+}
+
+.button
+{
+	width: 150px;
+	height: 40px;
+	position: absolute;
+}
+
+.button a
+{
+	display: block;
+	height: 100%;
+	padding: 15px 0px;
+	font-weight: 700;
+	background: var(--color-button);
+	text-align: center;
+	color: var(--color-char);
+	text-shadow: 0px 0px 3px #A0A0A0;
+	transition: color 0.3s, background 0.3s;
+}
+
+.button a:hover
+{
+	background: var(--color-char);
+	color: var(--color-button);
+}
+
+.button.seeprojet
+{
+top: 340px;
+left: 500px;
+}
+
+.button.cv
+{
+top: 340px;
+left: 670px;
+}
